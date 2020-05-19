@@ -1,0 +1,21 @@
+server:
+  port: 15001
+spring:
+  application:
+    name: customer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    sentinel:
+      transport:
+        dashboard: localhost:8850
+        port: 8850
+#      datasource:
+#        nacos:
+#          ds1:
+#            server-addr: localhost:8848
+#            data-id: customer-sentinel
+#            group-id: DEFAULT_GROUP
+#            data-type: json
+#            rule-type: flow
